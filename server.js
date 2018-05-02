@@ -61,7 +61,7 @@ app.get('/about', (req, res) => {
 app.get('/portfolio', (req, res) => {
     res.render('portfolio.hbs', {
         pageTitle: 'This is my portfolio',
-        welcomeMesage: 'Welcome to my portfolio'
+        welcomeMessage: 'Welcome to my portfolio'
     })
 });
 
