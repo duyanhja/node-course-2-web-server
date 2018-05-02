@@ -58,6 +58,14 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio.hbs', {
+        pageTitle: 'This is my portfolio',
+        welcomeMesage: 'Welcome to my portfolio'
+    })
+});
+
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Error handling request'
